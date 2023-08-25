@@ -125,19 +125,6 @@
 }
 
 {
-  function getCoords(elem) {
-    let box = elem.getBoundingClientRect();
-
-    return {
-      top: box.top + window.pageYOffset,
-      bottom: box.bottom + window.pageYOffset,
-      right: box.right + window.pageXOffset,
-      left: box.left + window.pageXOffset,
-      height: box.bottom - box.top,
-      width: box.right - box.left,
-    };
-  }
-
   function showTip(e) {
     if (!e.target.dataset.tooltip) return;
 
