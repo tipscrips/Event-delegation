@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Event delegation</title>
+  </head>
+  <body>
+    <section id="header-menu">
+      <h3>Event delegation</h3>
+
+      <ul>
+        <li>
+          <button data-action="save">Save</button>
+        </li>
+        <li><button class="load" data-action="load">Load</button></li>
+        <li><button data-action="search">Search</button></li>
+      </ul>
+    </section>
+    <div class="main-container">
+      <aside class="aside-menu">
+        <ul class="tree" id="tree">
+          <li>
+            Animals
+            <ul>
+              <li>
+                Mammals
+                <ul>
+                  <li>Cows</li>
+                  <li>Donkeys</li>
+                  <li>Dogs</li>
+                  <li>Tigers</li>
+                </ul>
+              </li>
+              <li>
+                Other
+                <ul>
+                  <li>Snakes</li>
+                  <li>Birds</li>
+                  <li>lizards</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Fish
+            <ul>
+              <li>
+                Aquarium
+                <ul>
+                  <li>Guppy</li>
+                  <li>Angelfish</li>
+                </ul>
+              </li>
+              <li>
+                Marine
+                <ul>
+                  <li>Sea trout</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+      <article class="main-article">
+        <div id="tables">
+          <table id="bagua-table">
+            <tbody>
+              <tr>
+                <th colspan="3">
+                  Square<em>Bagua</em>: Direction, Element, Color, Meaning
+                </th>
+              </tr>
+              <tr>
+                <td class="nw">
+                  <strong>Northwest</strong> <br />Metal <br />Silver
+                  <br />Elders
+                </td>
+                <td class="n">
+                  <strong>North</strong> <br />Water <br />Blue <br />Change
+                </td>
+                <td class="ne">
+                  <strong>Northeast</strong> <br />Earth <br />Yellow
+                  <br />Direction
+                </td>
+              </tr>
+              <tr>
+                <td class="w">
+                  <strong>West</strong> <br />Metal <br />Gold <br />Youth
+                </td>
+                <td class="c">
+                  <strong>Center</strong> <br />All <br />Purple <br />Harmony
+                </td>
+                <td class="e">
+                  <strong>East</strong> <br />Tree <br />Blue <br />Future
+                </td>
+              </tr>
+              <tr>
+                <td class="sw">
+                  <strong>Southwest</strong> <br />Earth <br />Brown
+                  <br />Calmness
+                </td>
+                <td class="s">
+                  <strong>South</strong> <br />Fire <br />Orange <br />Glory
+                </td>
+                <td class="se">
+                  <strong>Southeast</strong> <br />Tree <br />Green <br />Novel
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="grid" class="user-table">
+            <thead>
+              <tr>
+                <th data-tooltip="Click to sort by age" data-type="number">
+                  Age
+                </th>
+                <th data-tooltip="Click to sort by names" data-type="string">
+                  Name
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5</td>
+                <td>John</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Pitre</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Michel</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Marc</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Dan</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <section class="tips">
+          <h4 class="header-quaternary">
+            Hover over the buttons below for hints
+          </h4>
+          <p id="lorem-text-box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            quod assumenda fuga vitae ipsa sequi. Velit quo voluptates quis
+            possimus iure saepe corrupti ea temporibus, facilis molestias quae
+            ut incidunt!
+          </p>
+
+          <button data-tooltip="this hint be longer than the element">
+            Short button
+          </button>
+          <button data-tooltip="HTML<br>hint">More button</button>
+
+          <p class="description">
+            Scroll the page so the buttons are at the top and check tips
+          </p>
+        </section>
+      </article>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

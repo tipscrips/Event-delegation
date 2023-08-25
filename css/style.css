@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+body {
+  height: 2000px;
+}
+
+#header-menu {
+  padding: 12px;
+  background-color: #09f;
+
+  line-height: 1.7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-menu h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+#header-menu ul {
+  list-style: none;
+  display: flex;
+
+  gap: 10px;
+}
+
+#header-menu button {
+  padding: 4px;
+}
+
+#tables {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 42px;
+  margin-bottom: 62px;
+}
+
+#bagua-table th {
+  text-align: center;
+  font-weight: bold;
+}
+
+#bagua-table td {
+  width: 150px;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 12px;
+}
+
+#bagua-table .nw {
+  background: #999;
+}
+
+#bagua-table .n {
+  background: #03f;
+  color: #fff;
+}
+
+#bagua-table .ne {
+  background: #ff6;
+}
+
+#bagua-table .w {
+  background: #ff0;
+}
+
+#bagua-table .c {
+  background: #60c;
+  color: #fff;
+}
+
+#bagua-table .e {
+  background: #09f;
+  color: #fff;
+}
+
+#bagua-table .sw {
+  background: #963;
+  color: #fff;
+}
+
+#bagua-table .s {
+  background: #f60;
+  color: #fff;
+}
+
+#bagua-table .se {
+  background: #0c3;
+  color: #fff;
+}
+
+#bagua-table .highlight {
+  background: red;
+}
+
+.main-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.main-article {
+  width: 920px;
+  margin: auto;
+  margin-top: 42px;
+}
+
+/* ASIDE MENU */
+.aside-menu {
+  padding-top: 42px;
+
+  box-shadow: 12px 24px 24px 0 rgba(0, 0, 0, 0.07);
+}
+
+.tree {
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 24px;
+}
+
+.tree li {
+  padding-left: 24px;
+  line-height: 1.3;
+  list-style: none;
+}
+
+.list-title::before {
+  font-size: 12px;
+  content: "▼ ";
+
+  color: #09f;
+}
+
+.list-title.toggle-button-hidden::before {
+  content: "▶ ";
+}
+
+.list-title:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* sort table */
+
+.user-table {
+  border-collapse: collapse;
+}
+
+.user-table th {
+  background-color: #bbbbbb;
+  padding: 12px;
+}
+
+.user-table tr {
+  background-color: #f0f0f0;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #e2e2e2;
+}
+
+.user-table td:nth-child(odd) {
+  border-right: 1px solid #bbbbbb;
+}
+
+.user-table td {
+  padding: 18px;
+}
+
+.user-table th {
+  cursor: pointer;
+}
+
+.user-table th:hover {
+  background: yellow;
+}
+
+/* tips */
+
+.tooltip {
+  /* немного стилизуем подсказку, можете использовать свои стили вместо этих */
+  position: fixed;
+  padding: 10px 20px;
+  border: 1px solid #b3c9ce;
+  border-radius: 4px;
+  text-align: center;
+  font: italic 14px/1.3 sans-serif;
+  color: #333;
+  background: #fff;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.header-quaternary {
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+#lorem-text-box {
+  margin-bottom: 12px;
+}
