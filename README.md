@@ -1,4 +1,4 @@
-# JUST SMALL TEXT PROJECT
+# JUST SMALL TEST PROJECT
 
 Test mini-project with the use of event delegation
 
